@@ -126,7 +126,7 @@ public class LdapUserService extends GitblitUserService {
                                 setUserAttributes(user, loggingInUser);
 
                                 // store in map
-                                ldapUsers.put(username, user);
+                                ldapUsers.put(username.toLowerCase(), user);
                             }
 
                             if (deleteRemovedLdapUsers) {
