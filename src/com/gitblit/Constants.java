@@ -34,7 +34,7 @@ public class Constants {
 
 	// The build script extracts this exact line so be careful editing it
 	// and only use A-Z a-z 0-9 .-_ in the string.
-	public static final String VERSION = "1.2.1-SNAPSHOT";
+	public static final String VERSION = "1.3.0-SNAPSHOT";
 
 	// The build script extracts this exact line so be careful editing it
 	// and only use A-Z a-z 0-9 .-_ in the string.
@@ -90,10 +90,16 @@ public class Constants {
 	
 	public static final String R_GITBLIT = "refs/gitblit/";
 	
+	public static final String baseFolder = "baseFolder";
+	
+	public static final String baseFolder$ = "${" + baseFolder + "}";
+	
+	public static final String contextFolder$ = "${contextFolder}";
+	
 	public static String getGitBlitVersion() {
 		return NAME + " v" + VERSION;
 	}
-
+	
 	/**
 	 * Enumeration representing the four access restriction levels.
 	 */
